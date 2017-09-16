@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5</title>
+
+</head>
+<body>
+	<img src="img/jd1.png" />
+	<script type="text/javascript">
+	var onOff = true;
+		var  dIan= document.getElementsByTagName("img")[0];
+		dIan.onclick =function () {
+			if(onOff) {
+				
+				dIan.style.width="200px";
+				dIan.style.height="200px";
+			} else {
+				dIan.style.width="100px"
+				dIan.style.height="100px";
+			}
+			onOff = !onOff;
+		}
+		
+	</script>
+</body>
+</html>

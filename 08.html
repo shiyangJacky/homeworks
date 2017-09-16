@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>8</title>
+</head>
+<body>
+	<ui id="oUl">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+	</ui>
+	<script type="text/javascript">
+		var oUl = document.getElementById("oUl");
+		var aLi = oUl.getElementsByTagName("li");
+		oUl.onclick =function () {
+			for(var i = 0; i < aLi.length; i++) {
+			if(i%2==0) {
+				aLi[i].style.backgroundColor = "red";
+			}else {
+				aLi[i].style.backgroundColor = "pink";
+			}
+			
+		}
+		}
+	</script>
+</body>
+</html>

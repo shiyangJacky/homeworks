@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>11</title>
+</head>
+<body>
+	<form>
+	<input type="button" value="点击选择" />
+		<select id="lol">
+			<option>请选择你的大区</option>
+			<option value="wZj">艾欧尼亚</option>
+			<option value="zGl">班德尔城</option>
+			<option id="lb">皮尔特沃夫</option>
+		</select>
+	</form>
+<script type="text/javascript">
+
+	var  dIan= document.getElementsByTagName("input")[0];
+	var  fAn= document.getElementsByTagName("option");
+	// console.log(fAn);
+		dIan.onclick =function () { 
+				fAn[3].selected= "selected";
+			}
+		
+
+</script>
+</body>
+</html>
